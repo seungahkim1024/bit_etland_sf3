@@ -9,9 +9,9 @@
 <form id="form" name="form" >
 	<div class="grid-container">
 	    <div class="grid-item" id="item_1">ID</div>
-	    <div class="grid-item" id="item_2"><input type="text" id="id" name="id"></div>
+	    <div class="grid-item" id="item_2"><input type="text" id="customerID" name="customerID"></div>
 	    <div class="grid-item" id="item_3">비밀번호</div>
-	    <div class="grid-item" id="item_4"><input type="text" id="pass" name="pass"></div>
+	    <div class="grid-item" id="item_4"><input type="text" id="password" name="password"></div>
 	    <div class="grid-item" id="item_11"><input type="submit" id="confirm_btn" value='확 인'></div>
 	    <div class="grid-item" id="item_12"><input type="reset" id="cancel_btn" value='취 소'> </div>
 	    <input type="hidden" name="cmd" value="signin" />
@@ -22,11 +22,12 @@
 </div>
 <jsp:include page="../home/bottom.jsp"/>
 <script>
-$('#confirm_btn').click(()=>{
+$('#confirm_btn').click(function(){
 	var id = $('#id').val();
 	var pass = $('#pass').val();
 	$('#form')
-	.attr('action', '${ctx}/customer.do')
+	.attr('method','POST')
+	.attr('action', '${ctx}/customer/signin')
 	.submit();
 });
 </script>		

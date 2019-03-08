@@ -6,6 +6,7 @@ import lombok.Data;
 
 @Data @Component
 public class EmployeeDTO {
+	
 	private String employeeId, manager, name, birthDate, photo, notes;
 
 }
