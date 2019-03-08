@@ -7,6 +7,14 @@
 	<name>bit_etland</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
+	
+	<contributors>
+    <contributor>
+      <name>Seungah Kim</name>
+      <email>edenkim1024@gmail.com</email>
+    </contributor>
+ 	</contributors>
+ 	
 	<properties> 
 		<java-version>1.8</java-version>
 		<org.springframework-version>4.3.0.RELEASE</org.springframework-version>
