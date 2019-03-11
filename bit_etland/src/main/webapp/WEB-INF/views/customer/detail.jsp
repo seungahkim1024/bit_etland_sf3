@@ -78,7 +78,7 @@ grid-column-end:5;
 	</div>
 </div>
 <div class="grid-item">
-	<span id="update_btn" class="label label-warning">${cus.customerName}</span>
+	<span id="update_btn" class="label label-warning">정보수정</span>
 </div>
 <div class="grid-item">
 	<span id="photo_btn" class="label label-warning">사진수정</span>
@@ -89,17 +89,17 @@ grid-column-end:5;
 <jsp:include page="../home/bottom.jsp"/>
 
 <script>
-$('#update_btn').click(()=>{
-	location.assign('${ctx}/customer.do?cmd=CUS_RETRIEVE&page=update&customerID=${cus.customerID}');
+$('#update_btn').click(function(){
+location.assign('${ctx}/move/customer/update');
 });
-$('#file_upload_btn').attr('style','cursor:pointer').click(()=>{
+$('#file_upload_btn').attr('style','cursor:pointer').click(function(){
 	$('#file_form')
 	.attr('method','post')
 	.attr('action','${ctx}/customer.do?cmd=CUST_FILE_UPLOAD&page=detail&customer_id=${cus.customerID}')
 	.attr('enctype','multipart/form-data')
 	.submit();
 });
-$('#delete_btn').click(()=>{
+$('#delete_btn').click(function(){
 	location.assign('${ctx}/customer.do?cmd=CUS_DELETE&dir=home&page=main&customerID=${cus.customerID}');
 });
 </script>    

@@ -3,14 +3,17 @@ package com.bit_etland.web.service;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.bit_etland.web.domain.CustomerDTO;
+import com.bit_etland.web.mapper.CustomerMapper;
 import com.bit_etland.web.proxy.Proxy;
 
 @Service
 public class CustomerServiceImpl implements CustomerService{
-
+	@Autowired CustomerMapper customerMapper;
+	
 	@Override
 	public void registCustomer(CustomerDTO cus) {
 		// TODO Auto-generated method stub
@@ -31,8 +34,8 @@ public class CustomerServiceImpl implements CustomerService{
 
 	@Override
 	public CustomerDTO retrieveCustomer(CustomerDTO cus) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return customerMapper.selectCustomer(cus);
 	}
 
 	@Override
@@ -49,8 +52,8 @@ public class CustomerServiceImpl implements CustomerService{
 
 	@Override
 	public void modifyCustomer(CustomerDTO cus) {
-		// TODO Auto-generated method stub
 		
+		customerMapper.updateCustomer(cus);
 	}
 
 	@Override

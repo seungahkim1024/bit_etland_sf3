@@ -4,7 +4,19 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.bit_etland.web.mapper.CustomerMapper">
   <select id="selectCustomer" resultType="com.bit_etland.web.domain.CustomerDTO"> <!-- resultType은 리턴타입이 있을 때 준다. -->
-    SELECT * FROM CUSTOMERS WHERE CUSTOMER_ID LIKE #{customerID} <!-- #은 ?와 같은 느낌. -->
+	SELECT
+		CUSTOMER_ID customerID,
+		PASSWORD password,
+		CUSTOMER_NAME customerName,
+		SSN ssn,
+		ADDRESS address,
+		CITY city,
+		POSTAL_CODE postalCode,
+		PHONE phone,
+		PHOTO photo
+	FROM CUSTOMERS
+	WHERE CUSTOMER_ID LIKE #{customerID}
+	AND PASSWORD LIKE #{password} <!-- #은 ?와 같은 느낌. -->
   </select>
   <insert
 		  id="insertCustomer"
@@ -36,8 +48,10 @@
 		  statementType="PREPARED"
 		  timeout="20">
 			UPDATE CUSTOMERS
-			SET PASSWORD = #{password}
+			SET PASSWORD = #{password}, PHONE = #{phone}, CITY = #{city}, 
+				ADDRESS = #{address}, POSTAL_CODE = #{postalCode}
 			WHERE CUSTOMER_ID LIKE #{customerID}
+
   </update>
   <delete
 		  id="deleteCustomer"

@@ -68,18 +68,15 @@ grid-column-end:5;
 		</div>
 	
 		<div class ="mypage2">
-		${cus.customerID} <br />
+		<input type="hidden" id = "customerID" name="customerID" value="${cus.customerID}" readonly/><br />
 		${cus.customerName} <br />
 		${cus.ssn} <br />
 		남 <br />
-		<input type="text" name="phone" placeholder="${cus.phone}"/> <br />
-		<input type="text" name="city" placeholder="${cus.city}"/> <br />
-		<input type="text" name="address" placeholder="${cus.address}"/>  <br />
-		<input type="text" name="postal_code" placeholder="${cus.postalCode}"/> <br />
-		<input type="text" name="password" placeholder="임시비밀번호"/> <br />
-		<input type="hidden" name="customer_id" value="${cus.customerID}"/>  <br />
-		<input type="hidden" name="cmd" value="cust_update"/>  <br />
-		<input type="hidden" name="page" value="detail"/>  <br />
+		<input type="text" id = "phone" name="phone" value="${cus.phone}"/> <br />
+		<input type="text" id="city" name="city" value="${cus.city}"/> <br />
+		<input type="text" id="address" name="address" value="${cus.address}"/>  <br />
+		<input type="text" id="postalCode" name="postalCode" value="${cus.postalCode}"/> <br />
+		<input type="text" id="password" name="password" placeholder="임시비밀번호"/> <br />
 		</div>
 	</div>
 </div>
@@ -92,7 +89,7 @@ grid-column-end:5;
 <script>
 $('#confirm_btn').attr('style','cursor:pointer').click(function(){
 	var form = $('#form');
-	form.attr('action','${ctx}/customer.do');
+	form.attr('action','${ctx}/customer/update');
 	form.attr('method','post');
 	form.submit();
 });
