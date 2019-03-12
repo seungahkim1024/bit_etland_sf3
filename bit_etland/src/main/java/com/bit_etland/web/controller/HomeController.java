@@ -10,10 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.bit_etland.web.proxy.ContextProxy;
-
 
 @Controller
 public class HomeController {
@@ -25,7 +23,7 @@ public class HomeController {
 	public String date(HttpSession session, HttpServletRequest request){
 		logger.info("\n --------- Welcome {} !! ----------","Home");
 		pxy.setContext();
-		return "public:layouts/home.tiles";
+		return "index.jsp";
 	}
 	@RequestMapping(value="/move/{dir}/{page}", method=RequestMethod.GET)
 	public String move(
@@ -33,6 +31,6 @@ public class HomeController {
 			@PathVariable String page) {
 		logger.info("\n --------- moeve to {} !! ----------",dir+"/"+page );
 		
-		return String.format("public:%s/%s.tiles", dir, page);
+		return String.format("%s/%s", dir, page);
 	}
 }
