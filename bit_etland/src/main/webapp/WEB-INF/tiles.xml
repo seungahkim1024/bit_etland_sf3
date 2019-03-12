@@ -15,7 +15,7 @@
     <put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp" />
   </definition>
   
-  <definition name="customer" template="/WEB-INF/views/layouts/customer.jsp">
+  <definition name="customer" template="/WEB-INF/views/customer/sign_in.jsp">
     <put-attribute name="head2" value="/WEB-INF/views/customer/head.jsp" />
     <put-attribute name="body" value="/WEB-INF/views/customer/body.jsp" />
     <put-attribute name="content" value="" />

@@ -33,6 +33,6 @@ public class HomeController {
 			@PathVariable String page) {
 		logger.info("\n --------- moeve to {} !! ----------",dir+"/"+page );
 		
-		return String.format("public:%s/%s.tiles", dir, page);
+		return String.format("customer:%s/%s.tiles", dir, page);
 	}
 }
