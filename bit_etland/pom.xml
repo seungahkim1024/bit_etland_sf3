@@ -28,6 +28,10 @@
 		<commons-el-version>1.0</commons-el-version>
 		<commons-fileupload-version>1.3.1</commons-fileupload-version>
 		<commons-io-version>2.4</commons-io-version>
+		<jackson-version>2.9.0</jackson-version>
+		<jaxb-impl>2.1</jaxb-impl>
+		<jackson-mapper-asl>1.9.13</jackson-mapper-asl>
+		<json-lib>2.4</json-lib>
 	</properties>
 	<dependencies>
 		<!-- Spring -->
@@ -232,7 +236,56 @@
 		    <artifactId>commons-io</artifactId>
 		    <version>${commons-io-version}</version>
 		</dependency>
-		
+		<!-- jackson-databind -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>${jackson-version}</version>
+		</dependency>
+		<!-- jackson-annotations -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-annotations</artifactId>
+		    <version>${jackson-version}</version>
+		</dependency>
+		<!-- jackson-core -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-core</artifactId>
+		    <version>${jackson-version}</version>
+		</dependency>
+		<!-- jackson-module-jaxb-annotations -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.module</groupId>
+		    <artifactId>jackson-module-jaxb-annotations</artifactId>
+		    <version>${jackson-version}</version>
+		</dependency>
+		<!-- jackson-jaxrs-json-provider -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.jaxrs</groupId>
+		    <artifactId>jackson-jaxrs-json-provider</artifactId>
+		    <version>${jackson-version}</version>
+		</dependency>
+		<!-- jaxb-impl -->
+		<dependency>
+		    <groupId>com.sun.xml.bind</groupId>
+		    <artifactId>jaxb-impl</artifactId>
+		    <version>${jaxb-impl}</version>
+		</dependency>
+		<!-- jackson-mapper-asl -->
+		<dependency>
+		    <groupId>org.codehaus.jackson</groupId>
+		    <artifactId>jackson-mapper-asl</artifactId>
+		    <version>${jackson-mapper-asl}</version>
+		</dependency>
+		<!-- json-lib -->
+		<dependency>
+		    <groupId>net.sf.json-lib</groupId>
+		    <artifactId>json-lib</artifactId>
+		    <version>${json-lib}</version>
+		    <classifier>jdk15</classifier>
+		</dependency>
+				
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
