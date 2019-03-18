@@ -23,7 +23,7 @@ public class HomeController {
 	public String date(HttpSession session, HttpServletRequest request){
 		logger.info("\n --------- Welcome {} !! ----------","Home");
 		pxy.setContext();
-		return "index.jsp";
+		return "algorithm.jsp";
 	}
 	@RequestMapping(value="/move/{dir}/{page}", method=RequestMethod.GET)
 	public String move(

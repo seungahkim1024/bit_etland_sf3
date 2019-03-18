@@ -33,9 +33,9 @@
 <body id="page-top">
 
   <!-- Navigation -->
-	<div class="item1" id="navi">
 	  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
 	    <div class="container">
+		<div class="item1" id="navi">
 	      <a class="navbar-brand js-scroll-trigger" href="#page-top">BIT LAND</a>
 	      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="navbar-toggler-icon"></span>
@@ -57,14 +57,14 @@
 	        </ul>
 	      </div>
 	    </div>
-	  </nav>
 	</div>
+	  </nav>
 	
   <!-- Masthead -->
-	<div class="item2" id="masthead">
 	  <header class="masthead">
 	    <div class="container h-100">
 	      <div class="row h-100 align-items-center justify-content-center text-center">
+			<div class="item2" id="masthead">
 	        <div class="col-lg-10 align-self-end">
 	          <h1 class="text-uppercase text-white font-weight-bold">WELCOME TO THE BIT LAND</h1>
 	          <hr class="divider my-4">
@@ -75,14 +75,14 @@
 	        </div>
 	      </div>
 	    </div>
-	  </header>
 	</div>
+	  </header>
 
   <!-- About Section -->
-  <div class="item3" id="about_section">
   <section class="page-section bg-primary" id="about">
     <div class="container">
       <div class="row justify-content-center">
+ 		<div class="item3" id="about_section">
         <div class="col-lg-8 text-center">
           <h2 class="text-white mt-0">We've got what you need!</h2>
           <hr class="divider light my-4">
@@ -91,13 +91,13 @@
         </div>
       </div>
     </div>
-  </section>
   </div>
+  </section>
 
   <!-- Services Section -->
-	<div class="item4" id="services_section">
 	  <section class="page-section" id="services">
 	    <div class="container">
+		<div class="item4" id="services_section">
 	      <h2 class="text-center mt-0">At Your Service</h2>
 	      <hr class="divider my-4">
 	      <div class="row">
@@ -131,14 +131,14 @@
 	        </div>
 	      </div>
 	    </div>
-	  </section>
 	</div>
+	  </section>
 	
   <!-- Portfolio Section -->
-	<div class="item5" id="portfolio_section">
 	  <section id="portfolio">
 	    <div class="container-fluid p-0">
 	      <div class="row no-gutters">
+			<div class="item5" id="portfolio_section">
 	        <div class="col-lg-4 col-sm-6">
 	          <a class="portfolio-box" href="resources/customer/img/portfolio/fullsize/1.jpg">
 	            <img class="img-fluid" src="resources/customer/img/portfolio/thumbnails/1.jpg" alt="">
@@ -219,23 +219,23 @@
 	        </div>
 	      </div>
 	    </div>
-	  </section>
 	</div>
+	  </section>
 
   <!-- Call to Action Section -->
-	<div class="item6" id="call_to_action_section">
 	  <section class="page-section bg-dark text-white">
 	    <div class="container text-center">
+		<div class="item6" id="call_to_action_section">
 	      <h2 class="mb-4">FREE JOIN!</h2>
 	      <a class="btn btn-light btn-xl" href="${ctx}/move/customer/sign_in">JOIN US!</a>
 	    </div>
-	  </section>
 	</div>
+	  </section>
 	
   <!-- Contact Section -->
-	<div class="item7" id="contact_section">
 	  <section class="page-section" id="contact">
 	    <div class="container">
+		<div class="item7" id="contact_section">
 	      <div class="row justify-content-center">
 	        <div class="col-lg-8 text-center">
 	          <h2 class="mt-0">Let's Get In Touch!</h2>
@@ -255,19 +255,20 @@
 	        </div>
 	      </div>
 	    </div>
-	  </section>
 	</div>
+	  </section>
 	
   <!-- Footer -->
-	<div class="item8" id="footer">
+	
 	  <footer class="bg-light py-5">
 	    <div class="container">
 		<div class="small text-center text-muted">
+	    <div class="item8" id="footer">
 			Copyright &copy; 2019 - Start Bootstrap
 		</div>
 		</div>
+		</div>
 	  </footer>
-	</div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="resources/customer/vendor/jquery/jquery.min.js"></script>
