@@ -13,10 +13,10 @@ $$ = {
 			return $('<h'+x.num+' id='+x.id+'/>');
 		},
 		form : x=>{
-			return $('<form/>');
+			return $('<form id="'+x.id+'"/>');
 		},
 		label : x=>{
-			return $('<label for ='+x.name+'>'+x.value+'</label></br>');
+			return $('<label for ='+x.name+'/></br>');
 		},
 		input : x =>{
 			return $('<input type='+x.type+' id='+x.id+' name='+x.name+'/></br>');
