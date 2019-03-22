@@ -1,5 +1,6 @@
-function sequence(){
+function math(){
 	_sequence.remove();
+	alert('ddd');
 	$$._navi();
 	$('#right_content').prepend($$.div({id:'right_start'}));
 	$('#leave_a_comment').before('<div id="right_end"/>'); //일회용으로 쓰고 버릴려고!
@@ -9,11 +10,11 @@ function sequence(){
 	$('#new_div').remove();
 	$('#right_end').remove();
 	let arr=[
-		{id:'ari', val:'등차수열'},
-		{id:'geo', val:'등비수열'},
-		{id:'fac', val:'팩토리얼'},
-		{id:'fibo', val:'피보나치'},
-		{id:'switch', val:'교행 자연수 수열'}
+		{id:'count', val:'알고리즘'},                  
+		{id:'maxMin', val:'최댓값과 최솟값'},
+		{id:'sumAvg', val:'합계와 평균'},
+		{id:'decide', val:'소수 판별'},
+		{id:'prime', val:'소인수 분해'}
 	];
 	$.each(arr,(i,j)=>{
 			let GID = Math.floor(Math.random() * 10000) + 1;

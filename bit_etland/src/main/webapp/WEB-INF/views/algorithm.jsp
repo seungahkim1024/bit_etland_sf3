@@ -50,7 +50,7 @@
       <h4>John's Blog</h4>
       <ul class="nav nav-pills nav-stacked" id="navi">
         <li class="active"><a href="#section1">Home</a></li>
-        <li><a href="rlsdkfn" id = "X">Friends</a></li>
+        <li><a href="#section2" id = "X">Friends</a></li>
         <li><a href="#section3">Family</a></li>
         <li><a href="#section3">Photos</a></li>
       </ul><br>
@@ -67,19 +67,19 @@
     <div id="right_content" class="col-sm-9">
       <h4><small>RECENT POSTS</small></h4>
       <hr>
-      <h2 id="que_1">I Love Food</h2>
+      <h2>I Love Food</h2>
       <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
-      <h5 class="buttons"><span id="answer_btn_1" class="label label-danger">Food</span> <span id="reset" class="label label-primary">Ipsum</span></h5><br>
-      <p id="result">Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
+      <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <br><br>
       
-      <h4 id="pre"><small>RECENT POSTS</small></h4>
+      <h4 id="rm_start" id="rm"><small>RECENT POSTS</small></h4>
       <hr>
-      <h2>Officially Blogging</h2>
+      <h2 id="officially_blogging">Officially Blogging</h2>
       <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
-      <h5><span id="answer_btn_2" class="label label-success">Lorem</span></h5><br>
+      <h5><span class="label label-success">Lorem</span></h5><br>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <hr id="post">
+      <hr id="rm_end">
 
       <h4 id="leave_a_comment">Leave a Comment:</h4>
       <form role="form">
@@ -128,10 +128,10 @@
 <footer class="container-fluid">
   <p>Footer Text</p>
 </footer>
-
 </body>
 <script src="${js}algorithm/algorithm.js"></script>
 <script src="${js}algorithm/sequence.js"></script>
+
 <script>
 algo.init('${ctx}')
 </script>
